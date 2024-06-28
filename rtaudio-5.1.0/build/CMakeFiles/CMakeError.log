@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /mnt/d/Audio/rtaudio-5.1.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_423a2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_423a2.dir/build.make CMakeFiles/cmTC_423a2.dir/build
+make[1]: Entering directory '/mnt/d/Audio/rtaudio-5.1.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_423a2.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -Wall    -o CMakeFiles/cmTC_423a2.dir/CheckSymbolExists.cxx.o -c /mnt/d/Audio/rtaudio-5.1.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_423a2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_423a2.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall     CMakeFiles/cmTC_423a2.dir/CheckSymbolExists.cxx.o  -o cmTC_423a2 
+CMakeFiles/cmTC_423a2.dir/CheckSymbolExists.cxx.o: In function `main':
+CheckSymbolExists.cxx:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_423a2.dir/build.make:97: recipe for target 'cmTC_423a2' failed
+make[1]: *** [cmTC_423a2] Error 1
+make[1]: Leaving directory '/mnt/d/Audio/rtaudio-5.1.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_423a2/fast' failed
+make: *** [cmTC_423a2/fast] Error 2
+
+File /mnt/d/Audio/rtaudio-5.1.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /mnt/d/Audio/rtaudio-5.1.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cb782/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cb782.dir/build.make CMakeFiles/cmTC_cb782.dir/build
+make[1]: Entering directory '/mnt/d/Audio/rtaudio-5.1.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cb782.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -Wall -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_cb782.dir/CheckFunctionExists.cxx.o -c /mnt/d/Audio/rtaudio-5.1.0/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_cb782
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb782.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_cb782.dir/CheckFunctionExists.cxx.o  -o cmTC_cb782 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_cb782.dir/build.make:97: recipe for target 'cmTC_cb782' failed
+make[1]: *** [cmTC_cb782] Error 1
+make[1]: Leaving directory '/mnt/d/Audio/rtaudio-5.1.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cb782/fast' failed
+make: *** [cmTC_cb782/fast] Error 2
+
+

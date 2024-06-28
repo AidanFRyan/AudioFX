@@ -1,0 +1,15 @@
+Determining if the function gettimeofday exists failed with the following output:
+Change Dir: D:/Audio/rtaudio-5.1.0/windowsBuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_4ad6d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.2.37902+b5aaefc9f for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.22.27905 for x64
+  CheckFunctionExists.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=gettimeofday /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4ad6d.dir\Debug\\" /Fd"cmTC_4ad6d.dir\Debug\vc142.pdb" /Gd /TP /errorReport:queue "D:\Audio\rtaudio-5.1.0\windowsBuild\CMakeFiles\CheckFunctionExists\CheckFunctionExists.cxx"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol gettimeofday referenced in function main [D:\Audio\rtaudio-5.1.0\windowsBuild\CMakeFiles\CMakeTmp\cmTC_4ad6d.vcxproj]
+D:\Audio\rtaudio-5.1.0\windowsBuild\CMakeFiles\CMakeTmp\Debug\cmTC_4ad6d.exe : fatal error LNK1120: 1 unresolved externals [D:\Audio\rtaudio-5.1.0\windowsBuild\CMakeFiles\CMakeTmp\cmTC_4ad6d.vcxproj]
+
+
+

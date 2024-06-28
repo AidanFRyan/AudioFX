@@ -1,0 +1,47 @@
+﻿  Building Custom Rule D:/Audio/rtaudio-5.1.0/CMakeLists.txt
+  RtAudio.cpp
+D:\Audio\rtaudio-5.1.0\RtAudio.h(220,1): warning C4275:  non dll-interface class 'std::runtime_error' used as base for dll-interface class 'RtAudioError'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\stdexcept(122): message :  see declaration of 'std::runtime_error'
+D:\Audio\rtaudio-5.1.0\RtAudio.h(219): message :  see declaration of 'RtAudioError'
+D:\Audio\rtaudio-5.1.0\RtAudio.h(814,34): warning C4251:  'RtApi::errorStream_': class 'std::basic_ostringstream<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'RtApi'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\iosfwd(220): message :  see declaration of 'std::basic_ostringstream<char,std::char_traits<char>,std::allocator<char>>'
+D:\Audio\rtaudio-5.1.0\RtAudio.h(815,25): warning C4251:  'RtApi::errorText_': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'RtApi'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(4343): message :  see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+D:\Audio\rtaudio-5.1.0\RtAudio.h(817,22): warning C4251:  'RtApi::stream_': struct 'RtApi::RtApiStream' needs to have dll-interface to be used by clients of class 'RtApi'
+D:\Audio\rtaudio-5.1.0\RtAudio.h(775): message :  see declaration of 'RtApi::RtApiStream'
+  rtaudio_c.cpp
+D:\Audio\rtaudio-5.1.0\RtAudio.cpp(5154,170): warning C4267:  '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+D:\Audio\rtaudio-5.1.0\RtAudio.h(220,1): warning C4275:  non dll-interface class 'std::runtime_error' used as base for dll-interface class 'RtAudioError'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\stdexcept(122): message :  see declaration of 'std::runtime_error'
+D:\Audio\rtaudio-5.1.0\RtAudio.h(219): message :  see declaration of 'RtAudioError'
+D:\Audio\rtaudio-5.1.0\RtAudio.h(814,34): warning C4251:  'RtApi::errorStream_': class 'std::basic_ostringstream<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'RtApi'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\iosfwd(220): message :  see declaration of 'std::basic_ostringstream<char,std::char_traits<char>,std::allocator<char>>'
+D:\Audio\rtaudio-5.1.0\RtAudio.h(815,25): warning C4251:  'RtApi::errorText_': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'RtApi'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(4343): message :  see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+D:\Audio\rtaudio-5.1.0\RtAudio.h(817,22): warning C4251:  'RtApi::stream_': struct 'RtApi::RtApiStream' needs to have dll-interface to be used by clients of class 'RtApi'
+D:\Audio\rtaudio-5.1.0\RtAudio.h(775): message :  see declaration of 'RtApi::RtApiStream'
+D:\Audio\rtaudio-5.1.0\rtaudio_c.cpp(65,1): warning C4996:  'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\string.h(337): message :  see declaration of 'strncpy'
+D:\Audio\rtaudio-5.1.0\rtaudio_c.cpp(94,1): warning C4996:  'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\string.h(337): message :  see declaration of 'strncpy'
+D:\Audio\rtaudio-5.1.0\rtaudio_c.cpp(102,1): warning C4996:  'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\string.h(337): message :  see declaration of 'strncpy'
+D:\Audio\rtaudio-5.1.0\rtaudio_c.cpp(169,1): warning C4996:  'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\string.h(337): message :  see declaration of 'strncpy'
+D:\Audio\rtaudio-5.1.0\rtaudio_c.cpp(182,1): warning C4996:  'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\string.h(337): message :  see declaration of 'strncpy'
+D:\Audio\rtaudio-5.1.0\rtaudio_c.cpp(193,1): warning C4996:  'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\string.h(337): message :  see declaration of 'strncpy'
+D:\Audio\rtaudio-5.1.0\rtaudio_c.cpp(204,1): warning C4996:  'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\string.h(337): message :  see declaration of 'strncpy'
+D:\Audio\rtaudio-5.1.0\rtaudio_c.cpp(223,1): warning C4996:  'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\string.h(337): message :  see declaration of 'strncpy'
+D:\Audio\rtaudio-5.1.0\rtaudio_c.cpp(234,1): warning C4996:  'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\string.h(337): message :  see declaration of 'strncpy'
+D:\Audio\rtaudio-5.1.0\rtaudio_c.cpp(244,1): warning C4996:  'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\string.h(337): message :  see declaration of 'strncpy'
+D:\Audio\rtaudio-5.1.0\rtaudio_c.cpp(254,1): warning C4996:  'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generating Code...
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\string.h(337): message :  see declaration of 'strncpy'
+     Creating library D:/Audio/rtaudio-5.1.0/windowsBuild/Release/rtaudio.lib and object D:/Audio/rtaudio-5.1.0/windowsBuild/Release/rtaudio.exp
+  rtaudio.vcxproj -> D:\Audio\rtaudio-5.1.0\windowsBuild\Release\rtaudio.dll

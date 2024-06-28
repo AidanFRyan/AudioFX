@@ -1,0 +1,8 @@
+﻿  cl : Command line warning D9002 : ignoring unknown option '/arch:SSE2'
+  synth.cpp
+  Generating code
+  1 of 782 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    25 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Synth.vcxproj -> D:\Audio\synth\VisualStudio\Synth\x64\Release\Synth.exe

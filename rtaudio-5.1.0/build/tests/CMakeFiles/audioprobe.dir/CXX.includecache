@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../tests/../RtAudio.h
+string
+-
+vector
+-
+stdexcept
+-
+iostream
+-
+windows.h
+-
+process.h
+-
+stdint.h
+-
+pthread.h
+-
+sys/time.h
+-
+sstream
+-
+CoreAudio/AudioHardware.h
+-
+
+/mnt/d/Audio/rtaudio-5.1.0/tests/audioprobe.cpp
+RtAudio.h
+/mnt/d/Audio/rtaudio-5.1.0/tests/RtAudio.h
+iostream
+-
+map
+-
+

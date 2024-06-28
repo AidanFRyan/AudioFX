@@ -1,0 +1,10 @@
+^D:\AUDIO\RTAUDIO-5.1.0\WINDOWSBUILD\CMAKEFILES\C64FE44BA2205480D2EA84B725B6EAFC\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Audio/rtaudio-5.1.0 -BD:/Audio/rtaudio-5.1.0/windowsBuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Audio/rtaudio-5.1.0/windowsBuild/RtAudio.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

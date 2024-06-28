@@ -1,0 +1,3 @@
+﻿  Building Custom Rule D:/Audio/rtaudio-5.1.0/tests/CMakeLists.txt
+  teststops.cpp
+  teststops.vcxproj -> D:\Audio\rtaudio-5.1.0\windowsBuild\tests\Release\teststops.exe

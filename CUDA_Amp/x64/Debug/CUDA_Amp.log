@@ -1,0 +1,61 @@
+﻿  Compiling CUDA source file ..\synth\synth.cu...
+  
+  D:\Audio\CUDA_Amp>"D:\Cuda 11\Dev\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\bin\HostX86\x64" -x cu   -I"D:\Cuda 11\Dev\include" -I"D:\Cuda 11\Dev\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\synth.cu.obj "D:\Audio\synth\synth.cu" 
+D:\Audio\synth\amps.h(23): warning : variable "t" was declared but never referenced
+  
+D:/Audio/synth/synth.cu(90): warning : variable "count" was declared but never referenced
+  
+  synth.cu
+D:\Audio\synth\pedals.h(81): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Audio\synth\pedals.h(165): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Audio\synth\pedals.h(248): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:/Audio/synth/synth.cu(118): warning C4018: '<': signed/unsigned mismatch
+D:/Audio/synth/synth.cu(90): warning C4101: 'count': unreferenced local variable
+D:\Audio\Simple-FFT\include\simple_fft\fft_impl.hpp(98): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  D:\Audio\Simple-FFT\include\simple_fft\fft_impl.hpp(136): note: see reference to function template instantiation 'void simple_fft::impl::bufferExchangeHelper<TComplexArray1D>(TComplexArray1D &,const size_t,const size_t,complex_type &)' being compiled
+          with
+          [
+              TComplexArray1D=CircularBuffer<std::complex<double>>
+          ]
+  D:\Audio\Simple-FFT\include\simple_fft\fft_impl.hpp(264): note: see reference to function template instantiation 'void simple_fft::impl::rearrangeData<TComplexArray1D>(TComplexArray1D &,const size_t)' being compiled
+          with
+          [
+              TComplexArray1D=CircularBuffer<std::complex<double>>
+          ]
+  D:\Audio\Simple-FFT\include\simple_fft\fft_impl.hpp(259): note: while compiling class template member function 'bool simple_fft::impl::CFFT<TComplexArray1D,1>::FFT_inplace(TComplexArray1D &,const size_t,const simple_fft::impl::FFT_direction,const char *&)'
+          with
+          [
+              TComplexArray1D=CircularBuffer<std::complex<double>>
+          ]
+  D:\Audio\Simple-FFT\include\simple_fft\fft.hpp(72): note: see reference to function template instantiation 'bool simple_fft::impl::CFFT<TComplexArray1D,1>::FFT_inplace(TComplexArray1D &,const size_t,const simple_fft::impl::FFT_direction,const char *&)' being compiled
+          with
+          [
+              TComplexArray1D=CircularBuffer<std::complex<double>>
+          ]
+  D:\Audio\Simple-FFT\include\simple_fft\fft.hpp(72): note: see reference to class template instantiation 'simple_fft::impl::CFFT<TComplexArray1D,1>' being compiled
+          with
+          [
+              TComplexArray1D=CircularBuffer<std::complex<double>>
+          ]
+  D:\Audio\synth\amps.h(101): note: see reference to function template instantiation 'bool simple_fft::FFT<CircularBuffer<std::complex<double>>>(const TComplexArray1D &,TComplexArray1D &,const size_t,const char *&)' being compiled
+          with
+          [
+              TComplexArray1D=CircularBuffer<std::complex<double>>
+          ]
+D:\Audio\Simple-FFT\include\simple_fft\fft_impl.hpp(99): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\Audio\Simple-FFT\include\simple_fft\fft_impl.hpp(100): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\Audio\Simple-FFT\include\simple_fft\fft_impl.hpp(162): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  D:\Audio\Simple-FFT\include\simple_fft\fft_impl.hpp(237): note: see reference to function template instantiation 'void simple_fft::impl::fftTransformHelper<TComplexArray1D>(TComplexArray1D &,const size_t,const size_t,complex_type &,const complex_type)' being compiled
+          with
+          [
+              TComplexArray1D=CircularBuffer<std::complex<double>>
+          ]
+  D:\Audio\Simple-FFT\include\simple_fft\fft_impl.hpp(266): note: see reference to function template instantiation 'bool simple_fft::impl::makeTransform<TComplexArray1D>(TComplexArray1D &,const size_t,const simple_fft::impl::FFT_direction,const char *&)' being compiled
+          with
+          [
+              TComplexArray1D=CircularBuffer<std::complex<double>>
+          ]
+D:\Audio\Simple-FFT\include\simple_fft\fft_impl.hpp(163): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\Audio\Simple-FFT\include\simple_fft\fft_impl.hpp(164): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+     Creating library D:\Audio\CUDA_Amp\x64\Debug\CUDA_Amp.lib and object D:\Audio\CUDA_Amp\x64\Debug\CUDA_Amp.exp
+  CUDA_Amp.vcxproj -> D:\Audio\CUDA_Amp\x64\Debug\CUDA_Amp.exe

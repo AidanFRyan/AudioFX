@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -Wall  -shared -Wl,-soname,librtaudio.so.6 -o librtaudio.so.6.1.0 CMakeFiles/rtaudio.dir/RtAudio.cpp.o CMakeFiles/rtaudio.dir/rtaudio_c.cpp.o /usr/lib/x86_64-linux-gnu/libasound.so -lpthread 
