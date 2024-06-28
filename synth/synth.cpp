@@ -31,7 +31,7 @@ void printMenu() {
 }
 
 void printEffectMenu() {
-	cout << "D: Delay\nF: Flange\n";
+	cout << "D: Delay\nF: Flange\nDist: Distortion\nC: Compressor\nP: Phaser\nLPF: LPF\nVox: Vox\n";
 }
 
 void printEffects(Pedalboard& pedal) {
@@ -104,9 +104,10 @@ int main() {
 	//pedal.effects.push_back(d);
 	//pedal.effects.push_back(l);
 	//pedal.effects.push_back(c);
-	//pedal.effects.push_back(fft);
 	//pedal.effects.push_back(f);
 	//pedal.effects.push_back(dist);
+	pedal.effects.push_back(fft);
+
 	
 
 	c->enable();
@@ -124,9 +125,9 @@ int main() {
 	dist->enable();
 
 	Vox* v = new Vox();
-	Phaser* phaser = new Phaser();
+	//Phaser* phaser = new Phaser();
 	fft->plugins.push_back(v);
-	fft->plugins.push_back(phaser);
+	//fft->plugins.push_back(phaser);
 	fft->enable();
 
 	for (int i = 0; i < audio.getDeviceCount(); ++i) {
@@ -173,6 +174,22 @@ int main() {
 			}
 			else if (t == "f" || t == "F") {
 				pedal.effects.push_back(new Flange());
+			}
+			else if (t == "Dist")
+			{
+				pedal.effects.push_back(new ArayaDistortion());
+			}
+			else if (t == "C" || t == "c")
+			{
+				pedal.effects.push_back(new Compressor());
+			}
+			else if (t == "P" || t == "p")
+			{
+				fft->plugins.push_back(new Phaser());
+			}
+			else if (t == "Vox")
+			{
+				fft->plugins.push_back(new Vox());
 			}
 		}
 		else if (s == "e") {

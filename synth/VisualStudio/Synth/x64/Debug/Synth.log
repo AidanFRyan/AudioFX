@@ -1,7 +1,1 @@
-﻿  synth.cpp
-D:\Audio\synth\synth.cpp(14,20): warning C4018:  '<': signed/unsigned mismatch
-D:\Audio\synth\synth.cpp(23,20): warning C4018:  '<': signed/unsigned mismatch
-D:\Audio\synth\synth.cpp(66,1): warning C4267:  '-=': conversion from 'size_t' to 'int', possible loss of data
-D:\Audio\synth\synth.cpp(150,20): warning C4018:  '<': signed/unsigned mismatch
-D:\Audio\synth\synth.cpp(138,6): warning C4101:  'count': unreferenced local variable
-  Synth.vcxproj -> D:\Audio\synth\VisualStudio\Synth\x64\Debug\Synth.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.Platform.targets(67,5): error MSB8020: The build tools for v142 (Platform Toolset = 'v142') cannot be found. To build using the v142 build tools, please install v142 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Retarget solution".
